@@ -1,0 +1,21 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS passenger_db;
+USE passenger_db;
+
+-- Create passenger table
+CREATE TABLE IF NOT EXISTS passenger (
+    passenger_id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    passenger_name VARCHAR(50) NOT NULL,
+    passenger_age INT NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    booking_pnr VARCHAR(6) NOT NULL,
+    meal_preference VARCHAR(30),
+    seat_preference VARCHAR(30)
+);
+
+INSERT INTO passenger (passenger_name, passenger_age, gender, booking_pnr, meal_preference, seat_preference)
+VALUES
+ ('John Doe', 30, 'Male', 'PNR1234', 'Vegetarian', 'Aisle'),
+ ('Jane Smith', 28, 'Female', 'PNR1234', 'Non-Vegetarian', 'Window'),
+ ('Alex Lee', 25, 'Other', 'PNR1234', NULL, 'Middle'),
+ ('Sam Brown', 40, 'Male', 'PNR5678', 'Vegan', 'Aisle');

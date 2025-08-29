@@ -1,0 +1,14 @@
+-- SQL script for URSPaymentMS database and Payment table creation
+
+CREATE DATABASE IF NOT EXISTS payment_db;
+USE urs_payment_db;
+
+CREATE TABLE IF NOT EXISTS payment (
+    payment_id BIGINT PRIMARY KEY,
+    card_number VARCHAR(16) NOT NULL,
+    card_type VARCHAR(10) NOT NULL,
+    card_holder_name VARCHAR(100) NOT NULL,
+    cvv VARCHAR(3) NOT NULL,
+    expiry_date VARCHAR(5) NOT NULL, -- MM/YY format
+    total_fare DOUBLE NOT NULL
+);

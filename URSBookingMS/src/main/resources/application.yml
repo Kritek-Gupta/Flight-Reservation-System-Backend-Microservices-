@@ -1,0 +1,8 @@
+resilience4j.circuitbreaker:
+ instances:
+  bookingServiceCircuitBreaker:
+   failureRateThreshold: 50
+   minimumNumberOfCalls: 5
+   waitDurationInOpenState: 60s
+   permittedNumberOfCallsInHalfOpenState: 3
+   automaticTransitionFromOpenToHalfOpenEnabled: true

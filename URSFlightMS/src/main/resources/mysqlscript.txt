@@ -1,0 +1,28 @@
+-- Create the database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS flight_db;
+
+-- Use the created database
+USE flight_db;
+
+CREATE TABLE flight (
+	flight_id VARCHAR(6) NOT NULL,
+    air_line VARCHAR(255) NOT NULL,
+    source VARCHAR(255) NOT NULL,
+    destination VARCHAR(255) NOT NULL,
+    arrival_time VARCHAR(10),
+    departure_time VARCHAR(10),
+    available_seats INT,
+    available_date DATE,
+    fare DOUBLE,
+    PRIMARY KEY (flight_id)
+);
+
+INSERT INTO flight (flight_id, air_line, source, destination, arrival_time, departure_time, available_seats, available_date, fare)
+VALUES 
+("MG-435", "SpiceJet", "Kolkata", "Hyderabad", "16:00", "18:30", 31, '2025-12-28', 3234.12),
+("AI-910", "AirIndia", "Bangalore", "Delhi", "19:00", "21:30", 83, '2025-12-12', 4342.35),
+("UK-789", "Vistara", "Mumbai", "Pune", "08:45", "10:15", 90, '2025-11-10', 1232.32),
+("GE-123", "IndiGo", "Chennai", "Hyderabad", "13:30", "14:00", 12, '2025-10-25', 1233.45),
+("AI-732", "AirIndia", "Bangalore", "Delhi", "12:23", "13:45", 54, '2025-12-22', 2345.00),
+("SG-283", "SpiceJet", "Bangalore", "Delhi", "14:23", "17:45", 87, '2025-12-22', 5345.00),
+("GE-234", "IndiGo", "Delhi", "Chennai", "09:30", "11:30", 3, '2025-10-13', 2300.00);

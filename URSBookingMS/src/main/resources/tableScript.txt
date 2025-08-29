@@ -1,0 +1,19 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS booking_db;
+USE booking_db;
+
+-- Create booking table
+CREATE TABLE IF NOT EXISTS booking (
+    pnr VARCHAR(10) PRIMARY KEY,
+    booking_date VARCHAR(20) NOT NULL,
+    departure_date VARCHAR(20) NOT NULL,
+    departure_time VARCHAR(10) NOT NULL,
+    total_fare DOUBLE NOT NULL,
+    flight_id VARCHAR(20) NOT NULL,
+    user_id VARCHAR(20) NOT NULL,
+    no_of_seats INT NOT NULL,
+    status VARCHAR(20) NOT NULL
+);
+
+INSERT INTO booking (pnr, booking_date, departure_date, departure_time, total_fare, flight_id, user_id, no_of_seats, status) VALUES
+('UG1234', '2025-08-23', '2025-09-01', '10:00', 12000.00, 'FL123', 'USR001', 2, 'BOOKED');

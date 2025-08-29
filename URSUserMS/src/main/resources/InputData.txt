@@ -1,0 +1,16 @@
+#register
+{
+  "username": "megha_27",
+  "password": "Megha@123",
+  "name": "megha shyam",
+  "email": "megha.shyam@gmail.com",
+  "city": "New Delhi",
+  "contactNumber": "6718498123"
+}
+
+
+#login
+{
+  "username": "megha_27",
+  "password": "Megha@123"
+}

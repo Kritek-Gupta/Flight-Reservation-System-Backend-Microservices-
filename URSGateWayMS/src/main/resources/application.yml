@@ -1,0 +1,27 @@
+spring:
+ cloud:
+  gateway:
+   discovery:
+    locator:
+     enabled: true
+   routes:
+    - id: userroute
+      uri: lb://URSUserMS
+      predicates:
+       - Path=/api/users/**
+    - id: flightroute
+      uri: lb://URSFlightMS
+      predicates:
+       - Path=/api/flights/**
+    - id: passengerroute
+      uri: lb://URSPassengerMS
+      predicates:
+       - Path=/api/passengers/**
+    - id: bookingroute
+      uri: lb://URSBookingMS
+      predicates:
+       - Path=/api/bookings/**
+    - id: paymentroute
+      uri: lb://URSPaymentMS
+      predicates:
+       - Path=/api/payments/**

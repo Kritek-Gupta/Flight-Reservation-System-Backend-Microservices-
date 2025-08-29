@@ -1,0 +1,19 @@
+-- Create the database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS user_db;
+
+-- Use the created database
+USE user_db;
+
+-- Create the user table
+CREATE TABLE IF NOT EXISTS user (
+    username VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    contact_number VARCHAR(15) NOT NULL
+);
+
+-- Insert sample data
+INSERT INTO user (username, password, name, email, city, contact_number) VALUES
+('testuser', 'password', 'Test User', 'test@example.com', 'TestCity', '1234567890');
