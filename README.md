@@ -80,10 +80,6 @@ Steps
 
 Clone the repository:
 
-git clone https://github.com/your-username/flight-reservation-system.git
-cd flight-reservation-system
-
-
 Start Consul for service discovery:
 
 docker run -d --name=consul -p 8500:8500 consul
