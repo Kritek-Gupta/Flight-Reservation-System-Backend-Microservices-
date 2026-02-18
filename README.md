@@ -8,7 +8,7 @@ The project emphasizes scalability, resilience, and clean architecture, making i
 
 🚀 Features
 
-🔐 User Authentication & Authorization (JWT-based security)
+🔐 User Authentication & Authorization
 
 ✈️ Flight Search – search by route, date, and availability
 
