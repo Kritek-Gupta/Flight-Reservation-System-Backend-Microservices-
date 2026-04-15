@@ -8,8 +8,6 @@ The project emphasizes scalability, resilience, and clean architecture, making i
 
 🚀 Features
 
-🔐 User Authentication & Authorization
-
 ✈️ Flight Search – search by route, date, and availability
 
 👥 Passenger Management – manage passenger details seamlessly
