@@ -2,7 +2,7 @@
 Flight Reservation System (FRS) – Backend Microservices ✈️
 📌 Overview
 
-Flight Reservation System (FRS) is a microservices-based airline reservation platform built with Spring Boot and Spring Cloud, designed to handle core airline operations such as user authentication, flight search, passenger management, booking lifecycle, and payments.
+Flight Reservation System (FRS) is a microservices-based airline reservation platform built with Spring Boot and Spring Cloud, designed to handle core airline operations such as flight search, passenger management, booking lifecycle, and payments.
 
 The project emphasizes scalability, resilience, and clean architecture, making it suitable for production-grade airline reservation systems.
 
